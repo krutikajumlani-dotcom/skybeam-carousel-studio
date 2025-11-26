@@ -28,8 +28,8 @@ export const callImagen = async (imagePrompt: string) => {
   const ai = getGenAI();
   
   const response = await ai.models.generateContent({
-    model: "imagen-3.0-generate-001",
-    contents: imagePrompt + ", high quality, 4k, professional photography",
+    model: "gemini-3-pro-image-preview",
+    contents: imagePrompt,
     config: {
       imageConfig: {
         aspectRatio: "4:5"
